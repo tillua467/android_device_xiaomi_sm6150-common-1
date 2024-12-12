@@ -122,8 +122,12 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey
-
+    android.hardware.drm-service.clearkey \
+    libcrypto_shim \
+    libdrm
+# Libs
+PRODUCT_PACKAGES += \
+    libcrypto_shim
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
